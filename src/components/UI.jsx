@@ -1,4 +1,4 @@
-import { Check, Circle } from 'lucide-react'
+import { Circle } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { formatDate } from '../lib/dates'
 

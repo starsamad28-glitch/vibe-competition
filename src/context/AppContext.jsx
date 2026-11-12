@@ -30,4 +30,5 @@ export function AppProvider({ children }) {
   }), [setData, setTheme])
   return <AppContext.Provider value={{ data, theme, toast, ...actions }}>{children}</AppContext.Provider>
 }
+// eslint-disable-next-line react-refresh/only-export-components
 export const useApp = () => useContext(AppContext)
