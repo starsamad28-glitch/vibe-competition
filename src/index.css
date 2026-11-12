@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { font-family: 'Inter', sans-serif; color: #1f2328; background: #f6f6f3; font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; --paper: #fff; --canvas: #f6f6f3; --ink: #1f2328; --muted: #788078; --line: #e7e8e2; --accent: #3b5bdb; --green: #2f9e6e; --shadow: 0 2px 8px rgba(32,38,31,.035); }
+:root[data-theme='dark'] { color-scheme: dark; --paper:#20231f; --canvas:#171a17; --ink:#edf0e9; --muted:#a1a99e; --line:#353a34; --accent:#8da3ff; --green:#66c99d; --shadow:0 2px 10px rgba(0,0,0,.14); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme='light']) { color-scheme:dark; --paper:#20231f; --canvas:#171a17; --ink:#edf0e9; --muted:#a1a99e; --line:#353a34; --accent:#8da3ff; --green:#66c99d; --shadow:0 2px 10px rgba(0,0,0,.14); } }
+* { box-sizing:border-box; }
+body { margin:0; min-width:320px; min-height:100vh; background:var(--canvas); }
+button,input,textarea,select { font:inherit; }
+button { color:inherit; }
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,[tabindex]:focus-visible { outline:3px solid color-mix(in srgb,var(--accent) 45%,transparent); outline-offset:2px; }
+::selection { background:color-mix(in srgb,var(--accent) 18%,transparent); }
+.serif { font-family:'Newsreader',Georgia,serif; }
+@media (prefers-reduced-motion: reduce) { *,*::before,*::after { scroll-behavior:auto!important; animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; } }
